@@ -1,7 +1,11 @@
+<script lang="ts">
+	import { Card } from '$lib/components/ui/card/index';
+</script>
+
 <header>
-	<div class="rounded-lg border bg-card p-4 text-card-foreground shadow-sm">
+	<Card class="p-4">
 		<div class="m-auto flex w-full max-w-screen-xl items-center justify-between">
 			<slot />
 		</div>
-	</div>
+	</Card>
 </header>

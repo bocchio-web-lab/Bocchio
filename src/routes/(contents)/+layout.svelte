@@ -17,7 +17,7 @@
 <Slogan {isHome} />
 
 {#if !isHome}
-	<main class="flex w-full flex-1 flex-col items-center justify-center px-4 py-8">
+	<main class="mx-auto my-6 grid w-11/12 max-w-4xl gap-6">
 		<slot />
 	</main>
 {/if}

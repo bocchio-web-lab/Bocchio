@@ -7,7 +7,11 @@
 				target="_blank"
 				aria-label="Message Bocchio via Telegram"
 			>
-				<img src="/icons/telegram.svg" alt="Telegram icon" class="h-8 rounded-full md:h-10" />
+				<img
+					src="/icons/telegram.svg"
+					alt="Telegram icon"
+					class="h-8 rounded-full bg-white md:h-10"
+				/>
 			</a>
 		</li>
 
@@ -18,7 +22,11 @@
 				target="_blank"
 				aria-label="Open Bocchio's GitHub page"
 			>
-				<img src="/icons/github.svg" alt="Github icon" class="h-8 rounded-full md:h-10" />
+				<img
+					src="/icons/github.svg"
+					alt="Github icon"
+					class="h-8 rounded-full bg-white md:h-10"
+				/>
 			</a>
 		</li>
 
@@ -29,7 +37,11 @@
 				target="_blank"
 				aria-label="Mail to Bocchio"
 			>
-				<img src="/icons/email.svg" alt="Email icon" class="h-8 rounded-full md:h-10" />
+				<img
+					src="/icons/email.svg"
+					alt="Email icon"
+					class="h-8 rounded-full bg-white md:h-10"
+				/>
 			</a>
 		</li>
 	</ul>
