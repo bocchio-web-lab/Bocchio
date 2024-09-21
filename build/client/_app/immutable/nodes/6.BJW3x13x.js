@@ -1,0 +1,3 @@
+import{s as u,e as _,t as l,c as d,b as h,d as p,f as m,i as g,h as c,j as x,n as f,k as y}from"../chunks/scheduler.Dw1Xknx6.js";import{S,i as b}from"../chunks/index.BjN0RBxD.js";import{p as v}from"../chunks/stores.Bv_7Uz84.js";function $(o){let t,r,e=JSON.stringify(o[0],null,4)+"",s,i;return{c(){t=_("pre"),r=l("	"),s=l(e),i=l(`\r
+`)},l(n){t=d(n,"PRE",{});var a=h(t);r=p(a,"	"),s=p(a,e),i=p(a,`\r
+`),a.forEach(m)},m(n,a){g(n,t,a),c(t,r),c(t,s),c(t,i)},p(n,[a]){a&1&&e!==(e=JSON.stringify(n[0],null,4)+"")&&x(s,e)},i:f,o:f,d(n){n&&m(t)}}}function E(o,t,r){let e;return y(o,v,s=>r(0,e=s)),[e]}class P extends S{constructor(t){super(),b(this,t,E,$,u,{})}}export{P as component};

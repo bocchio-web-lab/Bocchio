@@ -1,0 +1,1 @@
+{"version":3,"file":"slug-CBwj_nzF.js","sources":["../../../.svelte-kit/adapter-node/entries/matchers/slug.js"],"sourcesContent":["const match = (param) => {\n  return /^[a-z0-9-]+$/.test(param);\n};\nexport {\n  match\n};\n"],"names":[],"mappings":"AAAK,MAAC,KAAK,GAAG,CAAC,KAAK,KAAK;AACzB,EAAE,OAAO,cAAc,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;AACpC;;;;"}

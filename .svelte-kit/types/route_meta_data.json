@@ -1,0 +1,14 @@
+{
+	"/(contents)": [],
+	"/": [],
+	"/auth": [],
+	"/auth/login": [
+		"src/routes/auth/login/+page.server.ts"
+	],
+	"/auth/register": [],
+	"/auth/reset-password": [],
+	"/(contents)/[contentType=contentType]": [
+		"src/routes/(contents)/[contentType=contentType]/+page.server.ts"
+	],
+	"/(contents)/[contentType=contentType]/[slug=slug]": []
+}
