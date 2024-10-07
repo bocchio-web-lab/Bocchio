@@ -18,7 +18,7 @@ export const actions = {
 
         try {
             // Fetch CSRF token
-            const csrfResponse = await fetch('http://identity.test/sanctum/csrf-cookie',
+            const csrfResponse = await fetch('http://identity.bocchio.dev/sanctum/csrf-cookie',
                 {
                     credentials: 'include',
                 }
