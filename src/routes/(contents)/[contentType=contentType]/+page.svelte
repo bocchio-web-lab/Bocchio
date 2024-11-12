@@ -5,14 +5,12 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	$: contentType = $page.params.contentType;
 
 	data.posts.forEach((post) => {
+		console.log(post);
 		post.link = `${$page.url.pathname}/${post.slug}`;
 	});
 </script>
-
-<!-- <h1>{contentType} page</h1> -->
 
 {#each data.posts as project}
 	<Card.Root
@@ -25,11 +23,14 @@
 			</Card.Header>
 
 			<Card.Content>
-				{project.body}
+				{project.content}
 			</Card.Content>
 
 			<Card.Footer class="mt-auto hidden md:block">
-				<a href={project.link} class=" w-full">
+				<a
+					href={project.link}
+					class=" w-full"
+				>
 					<Button class="w-full">Read the content</Button>
 				</a>
 			</Card.Footer>
@@ -37,13 +38,16 @@
 		<div class="grow-[1] basis-60 content-center">
 			<img
 				src="/icons/github.svg"
-				class="m-auto max-h-52 max-w-full rounded-2xl p-6 transition-transform group-hover:scale-110"
+				class="m-auto max-h-52 max-w-full rounded-2xl bg-white p-6 transition-transform group-hover:scale-110"
 				alt="GitHub logo"
 			/>
 		</div>
 
 		<Card.Footer class="mt-auto block w-full md:hidden">
-			<a href={project.link} class=" w-full">
+			<a
+				href={project.link}
+				class=" w-full"
+			>
 				<Button class="w-full">Read the content</Button>
 			</a>
 		</Card.Footer>

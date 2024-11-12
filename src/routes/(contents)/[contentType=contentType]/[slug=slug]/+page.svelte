@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 </script>
 
-<pre>
-	{JSON.stringify($page, null, 4)}
-</pre>
+<h1>{data.post.title}</h1>

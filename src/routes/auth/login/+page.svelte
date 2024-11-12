@@ -5,13 +5,13 @@
 	import { Label } from '$lib/components/ui/label/index.js';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import type { PageData } from './$types';
-	import { enhance } from '$app/forms';
+	import type { ActionData, PageData } from './$types';
 
-	let data: PageData;
+	export let data: PageData;
+	export let form: ActionData;
 
-	let email = 'tommmaso.bocchietti@gmail.com';
-	let password = '1234';
+	let email = 'tommaso.bocchietti@gmail.com';
+	let password = '12345678';
 
 	onMount(() => {
 		if (localStorage.getItem('token')) {
@@ -81,3 +81,9 @@
 		</Card.Content>
 	</form>
 </Card.Root>
+
+{#if form?.success}
+	<p>Succesfully logged in</p>
+{:else}
+	<pre class="min-h-52 w-full break-words p-4">{form?.text}</pre>
+{/if}
