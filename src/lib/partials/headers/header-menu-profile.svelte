@@ -4,7 +4,7 @@
 	import LogOut from 'lucide-svelte/icons/log-out';
 	import User from 'lucide-svelte/icons/user';
 
-	const isUserLoggedIn: boolean = false;
+	const isUserLoggedIn: boolean = true;
 </script>
 
 {#if isUserLoggedIn}

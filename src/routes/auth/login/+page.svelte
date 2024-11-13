@@ -14,7 +14,7 @@
 	let password = '12345678';
 
 	onMount(() => {
-		if (localStorage.getItem('token')) {
+		if (form?.success) {
 			goto('/');
 		}
 	});
@@ -85,5 +85,6 @@
 {#if form?.success}
 	<p>Succesfully logged in</p>
 {:else}
-	<pre class="min-h-52 w-full break-words p-4">{form?.text}</pre>
+	<pre class="w-full break-words p-4">{form?.requestInit}</pre>
+	<pre class="w-full break-words p-4">{form?.text}</pre>
 {/if}
